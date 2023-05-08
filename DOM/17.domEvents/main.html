@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+  </body>
+  <!-- <script>
+    let btn = document.getElementById("btn");
+    console.log(btn);
+    function touched() {
+      btn.innerText = "Click Hogaya";
+      alert("The Button was Clicked");
+      let data = prompt("Enter your username");
+      alert(`Your Name is ${data}`);
+    }
+  </script> -->
+  <!-- 
+  <script>
+    let btn = document.getElementById("btn");
+    function touched() {
+      btn.innerText = "Click Hogaya";
+      alert("The Button was Clicked");
+      let data = prompt("Enter your username");
+      alert(`Your Name is ${data}`);
+    }
+    btn.addEventListener("click", touched);
+
+    console.log(btn);
+  </script> -->
+
+  <script>
+    let btn = document.getElementById("btn");
+    btn.addEventListener("mouseover", function () {
+      alert("You Hovered the Button");
+    });
+
+    btn.addEventListener("mouseout", function () {
+      console.log("You Out the Button");
+    });
+
+    btn.addEventListener("click", function () {
+      alert("You Clicked the Button");
+    });
+  </script>
+</html>

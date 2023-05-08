@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body></body>
+  <script>
+    let title = document.createElement("title");
+    title.innerText = "Suhail Website";
+    document.head.appendChild(title);
+
+    let div = document.createElement("div");
+    div.className = "row";
+    let ul = document.createElement("ul");
+    let arr = ["Suhail", "Roushan", "Ali","Shah Rukh Khan"];
+    for (let i = 0; i <= arr.length - 1; i++) {
+      let li = document.createElement("li");
+      li.innerText = `${i+1}. ${arr[i]}`;
+      ul.appendChild(li);
+    }
+
+    document.body.append(div);
+    div.append(ul);
+    ul.append(li);
+  </script>
+</html>

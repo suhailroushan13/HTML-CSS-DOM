@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Form</title>
+  </head>
+  <body>
+    <h1>Example Form</h1>
+    <form id="example-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <input type="submit" value="Submit" onclick="test(event)" />
+    </form>
+    <script>
+      function test(event) {
+        const form = document.getElementById("name");
+        event.preventDefault();
+        console.log(form.value);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Insert Adjacent</h1>
+
+    <div class="box">
+      <ul>
+        <li>1.Home</li>
+        <li>2.About</li>
+        <li>3.Sign In</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    let store = document.getElementsByTagName("ul");
+    let idGive = (store[0].id = "listID");
+    console.log(store[0]);
+    let takeID = document.getElementById("listID");
+    let add = document.createElement("li");
+    add.innerText = "4.Log In";
+    takeID.append(add);
+    console.log(takeID);
+  </script>
+</html>

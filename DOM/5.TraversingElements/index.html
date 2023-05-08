@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Suhail</h1>
+
+    <!-- <ul>
+      <li id="intro">List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+    </ul> -->
+    <hr />
+    <ul id="childs">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </body>
+  <script>
+    // let store = document.getElementById("intro");
+    // let parent = store.parentElement;
+    // parent.innerHTML = "<h1>Hello Suhail </h1>";
+    // console.log(parent);
+
+    let store = document.getElementById("childs");
+    let value = store.firstElementChild;
+    let value1 = store.lastElementChild;
+    let value2 = store.parentElement;
+    let value3 = store.children;
+
+    let value4 = store.nextElementSibling;
+    let value5 = store.previousElementSibling;
+
+    console.log(value);
+    console.log(value1);
+    console.log(value2);
+    console.log(value3);
+    console.log(value4);
+    console.log(value5);
+  </script>
+</html>

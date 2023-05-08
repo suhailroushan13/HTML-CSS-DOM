@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+        padding: 50px;
+      }
+      #box {
+        background-color: brown;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body id="bodys">
+    <div id="box">
+      <button id="btns">Click Here</button>
+    </div>
+  </body>
+  <script>
+    let body = document.getElementById("bodys");
+    let div = document.getElementById("box");
+    let btns = document.getElementById("btns");
+    console.log(btns);
+
+    body.addEventListener("click", function body() {
+      console.log("body has been clicked");
+    });
+    div.addEventListener("click", function div() {
+      console.log("div has been clicked");
+    });
+
+    btns.addEventListener("click", function btn(event) {
+      console.log("Button has been clicked");
+      event.stopPropagation();
+    });
+  </script>
+</html>

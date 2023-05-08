@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .color {
+        color: red;
+        background-color: aqua;
+      }
+      .dim {
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="box" class="color dim">Send</button>
+  </body>
+  <script>
+    let store = document.getElementById("box");
+
+    console.log(store.classList);
+    //  store.classList.add("dim")
+    // store.classList.remove("dim")
+    // store.classList.replace("color","dim")
+    // let test = store.classList.contains("color") ==> if its color now then true or else false
+    // store.classList.toggle("dim")
+  </script>
+</html>
