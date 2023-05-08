@@ -1,0 +1,21 @@
+In HTML, images are inserted using the <img> tag. Here's an example of how to insert an image:
+
+
+<img src="path/to/image.jpg" alt="Image Description">
+The src attribute specifies the path to the image file, 
+which can be a local file path or a URL. The alt attribute specifies alternative text that is displayed if the image cannot be loaded or for accessibility purposes.
+
+Here's an example of how to specify an image width and height:
+
+
+<img src="path/to/image.jpg" alt="Image Description" width="300" height="200">
+In this example, the width and height attributes specify
+ the dimensions of the image in pixels.
+
+You can also specify a class or ID for the image using the 
+class and id attributes, which can be used to apply CSS styles or to manipulate the image using JavaScript. Here's an example:
+
+
+<img src="path/to/image.jpg" alt="Image Description" class="image-class" id="image-id">
+In this example, the class attribute specifies the CSS class to apply to the image, 
+and the id attribute specifies a unique identifier for the image that can be used in JavaScript.

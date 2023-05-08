@@ -1,0 +1,62 @@
+In HTML, tables are created using the <table> element. 
+Here's an example of a basic table with two rows and two columns:
+
+
+<table>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+</table>
+In this example, the <table> element contains two <tr>
+ (table row) elements, each of which contains two <td> (table data) elements.
+
+You can also use the <th> (table header) 
+element to create header cells for the table. Here's an example:
+
+
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+</table>
+In this example, the first row contains <th> elements 
+instead of <td> elements, which creates header cells for the table.
+
+You can also merge cells using the colspan and rowspan attributes. Here's an example:
+
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th colspan="2">Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+    <td>Row 1, Column 3</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+    <td>Row 2, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 3, Column 2</td>
+    <td>Row 3, Column 3</td>
+  </tr>
+</table>
+In this example, the second header cell spans two columns 
+using the colspan attribute, and the first cell in the second row spans two rows using the rowspan attribute.

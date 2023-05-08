@@ -1,0 +1,32 @@
+HTML (HyperText Markup Language) provides a way to create structured documents
+ by defining elements and their attributes. Forms are an important element in HTML that allows users to interact with a webpage by entering data and submitting it to the server. Here's an example of a simple form in HTML:
+
+
+<form action="/submit-form" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+In this example, we have a form that contains three input fields:
+ a text input for the name, an email input for the email address, 
+ and a textarea input for the message. The label element is used to
+  associate the input with its label, which provides context for the user.
+
+The required attribute on each input ensures that the user must fill
+ out that field before submitting the form. The action attribute 
+ specifies where the form data should be submitted to, and the 
+ method attribute specifies the HTTP method to use for the 
+ request (usually POST for submitting form data).
+
+Finally, the button element is used to create a button that the 
+user can click to submit the form.
+
+There are many other types of form elements and attributes available
+ in HTML, including radio buttons, checkboxes, dropdown lists, and more.

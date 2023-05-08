@@ -1,0 +1,53 @@
+In HTML, there are three types of lists: unordered lists (<ul>), 
+ordered lists (<ol>), and definition lists (<dl>). 
+Here are some examples of each type:
+
+Unordered List (<ul>):
+
+html
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+Output:
+
+Item 1
+Item 2
+Item 3
+Ordered List (<ol>):
+
+html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+Output:
+
+Item 1
+Item 2
+Item 3
+Definition List (<dl>):
+
+html
+<dl>
+  <dt>Term 1</dt>
+  <dd>Definition 1</dd>
+  <dt>Term 2</dt>
+  <dd>Definition 2</dd>
+  <dt>Term 3</dt>
+  <dd>Definition 3</dd>
+</dl>
+Output:
+Term 1
+: Definition 1
+Term 2
+: Definition 2
+Term 3
+: Definition 3
+
+In each example, the list items are contained within <li> tags. 
+For definition lists, the term is contained within a <dt> tag
+ and the definition is contained within a <dd> tag.
